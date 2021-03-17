@@ -80,10 +80,20 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .js-toDoForm:focus-within span,
-.js-toDoForm:hover span {
+.js-toDoForm:hover span,
+.js-toDoForm:focus-within input,
+.js-toDoForm:hover input {
   will-change: color, font-size;
   color: #fdcb6e;
   font-size: 2rem;
+}
+.js-toDoForm:focus-within input,
+.js-toDoForm:hover input {
+  border-bottom: 4px solid #fdcb6e;
+}
+
+.js-toDoForm:hover input::placeholder {
+  color: #2c3e50;
 }
 
 .js-toDoForm input {
@@ -92,6 +102,8 @@ textarea:focus::-webkit-input-placeholder {
   margin: 10px 0;
   border: none;
   border-bottom: 2px solid white;
+  border-radius: 20%;
+
   background-color: transparent;
 }
 .js-toDoForm input,
@@ -101,6 +113,8 @@ textarea:focus::-webkit-input-placeholder {
   font-weight: 500;
   text-align: center;
   outline-style: none;
+  transition: 0.1s linear;
+  transition-property: color, font-size, border-bottom;
 }
 
 .js-toDoForm input::placeholder {
@@ -152,6 +166,13 @@ textarea:focus::-webkit-input-placeholder {
   text-align: center;
 }
 
+.js-toDoList li {
+  padding: 5px 0;
+  margin: 5px 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
 .js-toDoList li:hover {
   font-size: 2rem;
   font-weight: bold;
@@ -164,12 +185,14 @@ textarea:focus::-webkit-input-placeholder {
 
 .js-toDoList span {
   margin: 0px 10px;
+  padding: 0 5px;
 }
 
 /* 버튼 */
 .js-toDoList button {
   background-color: transparent;
-  padding: 5px 8px;
+  margin: 5px;
+  padding: 2px 5px;
   border: none;
   outline: none;
   border-radius: 20%;

@@ -1,0 +1,72 @@
+/* what is your name */
+
+.js-form {
+  border-bottom: 5px solid white;
+}
+
+.js-form,
+.js-form span {
+  font-size: 3.5rem;
+  margin-top: 20px;
+}
+
+.js-form input {
+  height: 100px;
+  background-color: transparent;
+  border: none;
+  animation: opacity-zero 1.5s linear infinite;
+}
+
+@keyframes opacity-zero {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.js-form input:focus {
+  animation: none;
+}
+
+.js-form input,
+.js-form input::placeholder {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  outline-style: none;
+  transition: color 0.5s linear;
+}
+
+.js-form input::placeholder {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.js-form input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: rgba(255, 255, 255, 0.2);
+}
+
+#reset-all {
+  font-size: 1rem;
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: none;
+  transition: 0.5s ease;
+  transition-property: color, font-size;
+}
+
+#reset-all:hover {
+  color: tomato;
+  font-size: 1.5rem;
+}
+
+/* end what is your name */

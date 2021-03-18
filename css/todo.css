@@ -1,0 +1,49 @@
+/* To-do List*/
+.js-toDoList {
+  list-style-type: "\1F4AA";
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.js-toDoList li {
+  margin-top: 10px;
+}
+
+.js-toDoList span:hover {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--yellow);
+  transition: all 0.5s ease;
+}
+.js-toDoList span:not(:hover) {
+  transition: all 0.5s ease;
+}
+
+.js-toDoList span {
+  padding: 7px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+/* 버튼 */
+.js-toDoList button {
+  background-color: transparent;
+  margin: 5px;
+  padding: 2px 5px;
+  border: none;
+  outline: none;
+  border-radius: 20%;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s linear;
+}
+
+.js-toDoList button:hover {
+  will-change: background-color;
+  background-color: rgba(255, 75, 75, 0.7);
+}
+.js-toDoList button:active {
+  background-color: rgba(253, 203, 110, 0.7);
+}
+
+/* end To-do List*/

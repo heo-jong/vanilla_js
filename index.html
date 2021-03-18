@@ -4,22 +4,33 @@
     <meta charset="UTF-8" />
 
     <title>Something</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <div class="js-clock">
       <h1 class="js-title">00:00</h1>
     </div>
+
     <form action="" class="js-form form">
-      <input type="text" placeholder="What is your name?" />
+      <span class="js-formInput">Hello, </span>
+      <input class="js-formInput" type="text" placeholder="What's Your Name?" />
     </form>
+
     <h4 class="js-greetings greetings"></h4>
+    <button  id="reset-all" class="js-greetings del-greetings">resetAll</button>
+    
     <form action="" class="js-toDoForm">
       <span>My to-do list</span>
       <input type="text" placeholder="Write a to do" />
     </form>
+
     <ul class="js-toDoList"></ul>
+
+    <img class="js-weIcon"></span>
+
     <span class="js-weather"></span>
+
+
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>

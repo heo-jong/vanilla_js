@@ -1,0 +1,70 @@
+/* to-do */
+
+.js-toDoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.js-toDoForm > span {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 20px;
+  transition: 0.1s linear;
+  transition-property: color, font-size;
+}
+
+.js-toDoForm:focus-within span,
+.js-toDoForm:hover span,
+.js-toDoForm:focus-within input,
+.js-toDoForm:hover input {
+  will-change: color, font-size;
+  color: var(--yellow);
+  font-size: 2rem;
+}
+.js-toDoForm:focus-within input,
+.js-toDoForm:hover input {
+  border-bottom: 4px solid var(--yellow);
+}
+
+.js-toDoForm:hover input::placeholder {
+  color: #2c3e50;
+}
+
+.js-toDoForm input {
+  height: 50px;
+  width: 500px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid white;
+  border-radius: 20%;
+
+  background-color: transparent;
+}
+.js-toDoForm input,
+.js-toDoForm input::placeholder {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  outline-style: none;
+  transition: 0.1s linear;
+  transition-property: color, font-size, border-bottom;
+}
+
+.js-toDoForm input::placeholder {
+  opacity: 0.8;
+  transition: color 0.3s linear;
+}
+
+.js-toDoForm input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: transparent;
+}
+
+/* to-do */
